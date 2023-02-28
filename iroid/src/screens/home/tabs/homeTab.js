@@ -39,7 +39,7 @@ export const HomeTab = ()=>{
                     iconColor="#3BB0EC"
                     size={20}
                     style={{backgroundColor:"#ffffff",borderColor:"#dcdcdc"}}
-                    onPress={() => console.log('Pressed')}
+                    onPress={() => Alert.alert("do some actions")}
                 />
           </Card.Actions>
         </Card>

@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import { Alert, StyleSheet, Text, View,Image } from 'react-native';
 import { useDispatch,useSelector } from 'react-redux';
+import { CommonActions } from '@react-navigation/native';
 import { TextInput, Button, ActivityIndicator } from 'react-native-paper';
 import { useFocusEffect } from '@react-navigation/native';
 import { userLogin } from './loginAction';
@@ -16,7 +17,7 @@ const LoginScreen = ({navigation})=>{
 
     useFocusEffect(React.useCallback(()=>{
         if(token){
-            navigation.navigate("Home Screen")
+            navigation.replace("Home Screen")
         }
         console.log("token :",token)
     },[token]))
